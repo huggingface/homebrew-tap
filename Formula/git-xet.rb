@@ -3,6 +3,8 @@ class GitXet < Formula
     homepage "https://github.com/huggingface/xet-core/tree/main/git_xet"
     version "0.1.0"
 
+    depends_on "git-lfs"
+
     on_macos do
         on_intel do
             url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.1.0/git-xet-macos-x86_64.zip"
