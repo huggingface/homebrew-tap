@@ -1,34 +1,34 @@
 class GitXet < Formula
     desc "Git-Xet is a Git-LFS plugin that implements upload and download of files using the Xet protocol."
     homepage "https://github.com/huggingface/xet-core/tree/main/git_xet"
-    version "0.1.0"
+    version "0.2.0"
 
     depends_on "git-lfs"
 
     on_macos do
         on_intel do
-            url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.1.0/git-xet-macos-x86_64.zip"
-            sha256 "7c264327b529746a69cf51c62f475b9d9f5b29412ff4aa292caddde3e71f55be"
+            url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.2.0/git-xet-macos-x86_64.zip"
+            sha256 "3bc49ac3d020f177f5cc9ff01447b55299ccba118589630c01310b620f82a468"
         end
 
         on_arm do
-            url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.1.0/git-xet-macos-aarch64.zip"
-            sha256 "a1b1f7c5d233fc1fa24c57ee36195982f1dfe9bb1f500e4fb64f7f8c82140a6d"
+            url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.2.0/git-xet-macos-aarch64.zip"
+            sha256 "098c851ef7c16475c90a33c70466a71ca1dedebca2225a6d7f5470e897a1b8e2"
         end
     end
 
     on_linux do
         on_intel do
             if Hardware::CPU.is_64_bit?
-                url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.1.0/git-xet-linux-x86_64.zip"
-                sha256 "74e73535fa999d966198fe3581b61f694326e79a73e981808438982d02bbdb35"
+                url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.2.0/git-xet-linux-x86_64.zip"
+                sha256 "80f1d822ec7bdff9652ab7843cda346d1e752b87f25109e4e04002ea08b81b0d"
             end
         end
 
         on_arm do
             if Hardware::CPU.is_64_bit?
-                url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.1.0/git-xet-linux-aarch64.zip"
-                sha256 "457c6acf25802c9e493d1d9a53edb477cf5e7542590fe3587c947fc884ad4fca"
+                url "https://github.com/huggingface/xet-core/releases/download/git-xet-v0.2.0/git-xet-linux-aarch64.zip"
+                sha256 "b8ff5ff6d2b112717220bdd637425a8199822358112b7cd0b268584b1e8fdb65"
             end
         end
     end
